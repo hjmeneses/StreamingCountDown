@@ -1,11 +1,11 @@
 # StreamingCountDown
 
-# a countdown for obs
+## a countdown for obs
 
 How to Use the Page  
 Access the Page:  
 Open your hosted URL:  
-https://hjmeneses.github.io/obscountdown/
+https://hjmeneses.github.io/StreamingCountDown/
 
 ## Countdown Timer:
 The page displays a countdown timer along with animated HUD elements. The timer starts from a default value (05:00) if no parameters are provided.
@@ -13,9 +13,9 @@ The page displays a countdown timer along with animated HUD elements. The timer 
 ## URL Parameters:
 
 time: Set the starting time for the countdown in the format mm:ss.  
-Example: https://hjmeneses.github.io/obscountdown/?time=03:30 starts the countdown at 3 minutes and 30 seconds.  
+Example: https://hjmeneses.github.io/StreamingCountDown/?time=03:30 starts the countdown at 3 minutes and 30 seconds.  
 scene: Specify the OBS scene name to switch to when the countdown reaches 0. This functionality works only when the page is used as a browser source in OBS (i.e., when window.obsstudio.setCurrentScene is available).  
-Example: https://hjmeneses.github.io/obscountdown/?time=03:30&scene=GameScene will switch to the scene named "GameScene" 500 ms after the timer reaches 0.  
+Example: https://hjmeneses.github.io/StreamingCountDown/?time=03:30&scene=GameScene will switch to the scene named "GameScene" 500 ms after the timer reaches 0.  
 Glitch: The getParameter('glitch') function is used to read the parameter from the URL. If the value is "off", the glitch class is removed from the timer element, disabling the effect. Otherwise (or if not specified), the glitch class is added, enabling the effect.  
 Timer: The timer element no longer includes the glitch class by default in the HTML; it is now added or removed via the script based on the parameter. With this change, you can control the glitch effect by appending ?glitch=off to the URL to disable it, or ?glitch=on (or omit it) to keep it enabled.  
 Additional Effects:  
@@ -37,7 +37,7 @@ The beep is triggered by the Web Audio API and is currently set to play every ti
 ## Customization Example  
 If you want to start the countdown at 2 minutes and switch to a scene named "LiveScene" after the timer reaches 0, you would access:  
 
-https://hjmeneses.github.io/obscountdown/?time=02:00&scene=LiveScene  
+https://hjmeneses.github.io/StreamingCountDown/?time=02:00&scene=LiveScene  
 For further customization, you can edit the source files (HTML, CSS, and JavaScript) directly on your GitHub repository and push the changes to update your GitHub Pages site.  
 
 This setup provides a flexible and dynamic countdown display tailored for OBS integration while allowing you to easily modify its appearance and behavior via URL parameters or by editing the code directly.  
